@@ -10,7 +10,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .button {
-          padding: 0.8em 1em;
+          padding: 0.6em 1em;
           border: none;
           border-radius: 8px;
           background: #b68c5a;
@@ -20,6 +20,7 @@
     <title>Legal Solutions</title>
   </head>
   <body>
+    <!-- these is header section design -->
     <header class="xl:container mx-auto">
       <!-- nav section start here  -->
       <nav class="max-w-screen-lg mx-auto py-8">
@@ -116,7 +117,6 @@
           <!-- these is hamburger menu  -->
           <div>
             <button
-              data-collapse-toggle="navbar-cta"
               type="button"
               class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-cta"
@@ -222,11 +222,49 @@
         </div>
       </nav>
       <!-- banner section start here  -->
-      <section></section>
+      <section class="max-w-screen-lg mx-auto relative">
+        <div class="container w-full lg:h-3/4 h-80">
+          <img
+            class="h-full w-full object-fill"
+            src="images/banner.png"
+            alt=""
+          />
+        </div>
+        <div class="absolute top-0 w-full h-full">
+          <div
+            class="flex flex-col text-center w-3/4 lg:w-7/12 mx-auto text-zinc-100 justify-center items-center h-full space-y-4"
+          >
+            <h2
+              class="text-xl font-semibold lg:text-5xl lg:font-semibold font-serif"
+            >
+              We Provide Effective legal solutions
+            </h2>
+            <p class="text-xs lg:text-sm text-center">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <div class="w-full flex items-center gap-4 lg:gap-7">
+              <input
+                class="h-7 text-black lg:placeholder:text-lg focus:border-none focus:outline-none placeholder:text-xs lg:h-12 rounded-lg pl-4 w-full"
+                type="text"
+                placeholder="Search Your services"
+              />
+              <button
+                class="button text-xs lg:text-lg font-semibold text-zinc-100"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
+    <!-- these is main section design  -->
     <main></main>
+    <!-- these is main section design  -->
     <footer></footer>
-    <!-- these is flowbite script file  -->
+    <!-- these is flow bite script file  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
   </body>
 </html>
